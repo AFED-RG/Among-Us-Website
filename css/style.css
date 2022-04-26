@@ -1,0 +1,545 @@
+
+@font-face {
+  font-family: amongus_font;
+  src: url("../css/amongus_font.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: amongus_font;
+  color: #0d0d0d;
+}
+
+html, body {
+  scroll-behavior: smooth;
+}
+
+
+header {
+  background-color: #0d0d0d;
+  top: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 999;
+  -webkit-box-shadow: 0 0 2px 1px #0d0d0d;
+          box-shadow: 0 0 2px 1px #0d0d0d;
+}
+
+header #amongus_logo {
+  width: 100%;
+  max-width: 35px;
+  border-radius: 50%;
+}
+
+header #navbar-brand {
+  color: #fff;
+  letter-spacing: 2px;
+  font-size: 25px;
+}
+
+header .nav-item {
+  padding: 10px 12px;
+  text-align: center;
+}
+
+header a.nav-item-link {
+  letter-spacing: 1px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+header a.nav-item-link:hover {
+  color: #f2f2f2;
+}
+
+header .navbar-toggler {
+  background: transparent;
+  outline: none !important;
+  border: none;
+}
+
+header i.fa-bars {
+  color: #fff;
+}
+
+header .nav-item-link .fa-arrow-left {
+  color: #fff;
+}
+
+header .nav-item-link:hover .fa-arrow-left {
+  -webkit-transform: translatex(-5px);
+          transform: translatex(-5px);
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+#landing_bg {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.8))), url("../img/amongus_bg.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url("../img/amongus_bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+#landing_bg .landing_content {
+  text-align: center;
+  color: #fff;
+  padding-top: 100px;
+}
+
+#landing_bg .landing_content .landing_page_red_img {
+  width: 100%;
+  max-width: 100px;
+}
+
+@-webkit-keyframes landing_page_float_red {
+  0% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+  50% {
+    -webkit-transform: translatey(-15px);
+            transform: translatey(-15px);
+  }
+  100% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+}
+
+@keyframes landing_page_float_red {
+  0% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+  50% {
+    -webkit-transform: translatey(-15px);
+            transform: translatey(-15px);
+  }
+  100% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+}
+
+#landing_bg .landing_content .landing_page_red_img {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  -webkit-animation: landing_page_float_red 5s ease-in-out infinite;
+          animation: landing_page_float_red 5s ease-in-out infinite;
+}
+
+#landing_bg .landing_content .landing_page_red_img img {
+  width: 100%;
+  height: auto;
+}
+
+#landing_bg .landing_content h1 {
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 60px;
+  text-shadow: 0px 5px 30px #f2f2f2;
+}
+
+#landing_bg .landing_content p {
+  font-size: 20px;
+  color: #e6e6e6;
+}
+
+#landing_bg .landing_content .download_btn {
+  border: none;
+  background-color: #ff0000;
+  padding: 8px 50px;
+  color: #fff;
+  letter-spacing: 1px;
+  outline: none;
+}
+
+#landing_bg .landing_content .download_btn .fa-download {
+  font-size: 18px;
+  color: #fff;
+}
+
+#landing_bg .landing_content .download_btn:hover {
+  background-color: #e60000;
+}
+
+#landing_bg .landing_content .arrow_down {
+  padding-top: 70px;
+}
+
+#landing_bg .landing_content .arrow_down .fa-angle-down {
+  color: #fff;
+  font-size: 25px;
+}
+
+#about {
+  padding-top: 65px;
+}
+
+#about .about_content {
+  text-align: center;
+  border: 1px solid #cccccc;
+  padding: 15px;
+}
+
+#about .about_content h1 {
+  font-size: 45px;
+  letter-spacing: 1px;
+}
+
+#about .about_content h1::after {
+  content: "";
+  display: block;
+  background-color: #cccccc;
+  width: 50px;
+  height: 5px;
+  border-radius: 5px;
+  margin: auto;
+}
+
+#about .about_content p {
+  padding-top: 10px;
+  font-size: 23px;
+}
+
+#maps {
+  padding-top: 80px;
+}
+
+#maps .maps_content {
+  text-align: center;
+}
+
+#maps .maps_content h1 {
+  font-size: 45px;
+  letter-spacing: 1px;
+}
+
+#maps .maps_content h1::after {
+  content: "";
+  display: block;
+  background-color: #cccccc;
+  width: 50px;
+  height: 5px;
+  border-radius: 5px;
+  margin: auto;
+}
+
+#maps .maps_content .maps_item {
+  padding-top: 10px;
+}
+
+#maps .maps_content .maps_item img {
+  width: 100%;
+  max-width: 500px;
+}
+
+#maps .maps_content .maps_item h2 {
+  color: #0d0d0d;
+  font-size: 30px;
+  letter-spacing: 1px;
+  border: 1px solid #cccccc;
+  padding: 5px 10px;
+  width: 200px;
+  margin: 10px auto;
+}
+
+#game_mechanics {
+  margin-top: 80px;
+  padding-top: 80px;
+  background-color: #000000;
+}
+
+#game_mechanics .game_mechanics_content {
+  text-align: center;
+}
+
+#game_mechanics .game_mechanics_content h1 {
+  font-size: 45px;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+#game_mechanics .game_mechanics_content h1::after {
+  content: "";
+  display: block;
+  background-color: #cccccc;
+  width: 50px;
+  height: 5px;
+  border-radius: 5px;
+  margin: auto;
+}
+
+#game_mechanics .game_mechanics_content p {
+  font-size: 23px;
+  color: #fff;
+}
+
+#game_mechanics .game_mechanics_content .team_item {
+  padding-top: 10px;
+}
+
+#game_mechanics .game_mechanics_content .team_item img {
+  width: 100%;
+  border-left: 3px solid #cccccc;
+}
+
+#game_mechanics .game_mechanics_content .team_item h2 {
+  color: #0d0d0d;
+  font-size: 30px;
+  letter-spacing: 1px;
+  border: 1px solid #cccccc;
+  padding: 5px 10px;
+  width: 200px;
+  margin: 20px auto;
+  color: #fff;
+}
+
+#game_mechanics .game_mechanics_content .team_item ol {
+  text-align: left;
+  padding: 10px 25px;
+  font-size: 20px;
+}
+
+#game_mechanics .game_mechanics_content .team_item ol li {
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+#game_mechanics .white_wave {
+  width: 100%;
+}
+
+#download {
+  padding-top: 80px;
+}
+
+#download .download_content {
+  text-align: center;
+}
+
+#download .download_content h1 {
+  font-size: 45px;
+  letter-spacing: 1px;
+}
+
+#download .download_content h1::after {
+  content: "";
+  display: block;
+  background-color: #cccccc;
+  width: 50px;
+  height: 5px;
+  border-radius: 5px;
+  margin: auto;
+}
+
+#download .download_content p {
+  font-size: 23px;
+  letter-spacing: 1px;
+}
+
+#download .download_content .download_item {
+  margin: 10px;
+  padding: 10px 50px;
+  border: 2px solid #0d0d0d;
+  width: 100%;
+  max-width: 300px;
+  outline: none;
+  letter-spacing: 1px;
+}
+
+#download .download_content .download_item:hover {
+  background-color: #0d0d0d;
+  color: #fff;
+}
+
+#download .download_content .download_item:hover .fa-download {
+  color: #fff;
+}
+
+footer {
+  background-color: #000000;
+  margin-top: 80px;
+  width: 100%;
+  padding: 30px;
+  text-align: center;
+}
+
+footer h1 {
+  font-size: 45px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+footer .amongus_logo_footer {
+  width: 100%;
+  max-width: 150px;
+}
+
+footer p {
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 1px;
+  padding-top: 40px;
+}
+
+.character_colors {
+  padding-bottom: 50px;
+}
+
+.character_colors .character_colors_content {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.character_colors .character_colors_content .characters {
+  position: relative;
+}
+
+.character_colors .character_colors_content .characters .character_colors_item {
+  position: absolute;
+  width: 100%;
+  max-width: 200px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  margin-top: 130px;
+}
+
+.character_colors .colors_set {
+  padding-top: 270px;
+  text-align: center;
+}
+
+.character_colors .colors_set span#color_name {
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.character_colors .colors_set h2 {
+  font-size: 30px;
+  letter-spacing: 1px;
+  padding-top: 50px;
+}
+
+.character_colors .colors_set .colors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: wrap row;
+          flex-flow: wrap row;
+}
+
+.character_colors .colors_set .colors .color_item {
+  margin: 5px 5px;
+  -webkit-box-shadow: 0 0 2px 0;
+          box-shadow: 0 0 2px 0;
+}
+
+.character_colors .colors_set .colors .red {
+  width: 100%;
+  max-width: 20px;
+  height: 20px;
+  background-color: #ff0000;
+  cursor: pointer;
+}
+
+.character_colors .colors_set .colors .cyan {
+  width: 100%;
+  max-width: 20px;
+  height: 20px;
+  background-color: #33ffcc;
+  cursor: pointer;
+}
+
+.character_colors .colors_set .colors .orange {
+  width: 100%;
+  max-width: 20px;
+  height: 20px;
+  background-color: #ff6600;
+  cursor: pointer;
+}
+
+.character_colors .colors_set .colors .yellow {
+  width: 100%;
+  max-width: 20px;
+  height: 20px;
+  background-color: #ffff66;
+  cursor: pointer;
+}
+
+.character_colors .colors_set .colors .lightgreen {
+  width: 100%;
+  max-width: 20px;
+  height: 20px;
+  background-color: #66ff33;
+  cursor: pointer;
+}
+
+.character_colors .colors_set .colors .green {
+  width: 100%;
+  max-width: 20px;
+  height: 20px;
+  background-color: #009933;
+  cursor: pointer;
+}
+
+.character_colors .colors_set .colors .blue {
+  width: 100%;
+  max-width: 20px;
+  height: 20px;
+  background-color: #0033cc;
+  cursor: pointer;
+}
+
+.character_colors .colors_set .colors .violet {
+  width: 100%;
+  max-width: 20px;
+  height: 20px;
+  background-color: #6633cc;
+  cursor: pointer;
+}
+
+.character_colors .colors_set .colors .pink {
+  width: 100%;
+  max-width: 20px;
+  height: 20px;
+  background-color: #ff66cc;
+  cursor: pointer;
+}
+
+.character_colors .colors_set .colors .brown {
+  width: 100%;
+  max-width: 20px;
+  height: 20px;
+  background-color: #663333;
+  cursor: pointer;
+}
+
+.character_colors .colors_set .colors .white {
+  width: 100%;
+  max-width: 20px;
+  height: 20px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.character_colors .colors_set .colors .black {
+  width: 100%;
+  max-width: 20px;
+  height: 20px;
+  background-color: #000;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */

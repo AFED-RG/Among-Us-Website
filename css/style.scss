@@ -1,0 +1,555 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: amongus_font;
+    color: #0d0d0d;
+}
+html,body
+{
+    scroll-behavior: smooth;
+}
+
+
+@font-face
+{
+    font-family: amongus_font;
+    src: url("../css/amongus_font.ttf");
+}
+
+header
+{
+    background-color: #0d0d0d;
+    top: 0;
+    position: sticky;
+    z-index: 999;
+    box-shadow: 0 0 2px 1px #0d0d0d;
+
+    #amongus_logo
+    {
+        width: 100%;
+        max-width: 35px;
+        border-radius: 50%;
+    }
+    #navbar-brand
+    {
+        color: #fff;
+        letter-spacing: 2px;
+        font-size: 25px;
+    }
+    .nav-item
+    {
+        padding: 10px 12px;
+        text-align: center;
+    }
+    a.nav-item-link
+    {
+        letter-spacing: 1px;
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+    }   
+    a.nav-item-link:hover
+    {
+        color: #f2f2f2;
+    }
+    
+    .navbar-toggler
+    {
+	    background: transparent;
+	    outline: none !important;
+	    border: none;
+    }
+    i.fa-bars 
+    {
+        color: #fff;
+    }
+    .nav-item-link .fa-arrow-left
+    {
+        color: #fff;
+    }
+    .nav-item-link:hover .fa-arrow-left
+    {
+        transform: translatex(-5px);
+        transition-duration: 0.5s;
+    }
+    
+}
+
+#landing_bg
+{
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.8)),url("../img/amongus_bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+
+    .landing_content
+    {
+        text-align: center;
+        color: #fff;
+        padding-top: 100px;
+    
+        .landing_page_red_img
+        {
+            width: 100%;
+            max-width: 100px;
+        }
+        @keyframes landing_page_float_red {
+            0% {
+                
+                transform: translatey(0px);
+            }
+            50% {
+                
+                transform: translatey(-15px);
+            }
+            100% {
+                
+                transform: translatey(0px);
+            }
+        }
+    
+        .landing_page_red_img {
+        
+            transform: translateY(0px);
+            animation: landing_page_float_red 5s ease-in-out infinite;
+            img { 
+                width: 100%; 
+                height: auto; 
+            }
+        }
+
+        h1 
+        {
+            color: #fff;
+            letter-spacing: 1px;
+            font-size: 60px;
+            text-shadow: 0px 5px 30px #f2f2f2;
+        }
+        p 
+        {
+            font-size: 20px;
+            color: #e6e6e6;
+        }
+
+        .download_btn
+        {
+            border: none;
+            background-color: #ff0000;
+            padding: 8px 50px;
+            color: #fff;
+            letter-spacing: 1px;
+            outline: none;
+
+            .fa-download
+            {
+                font-size: 18px;
+                color: #fff;
+            }
+        }
+        .download_btn:hover
+        {
+            background-color: #e60000;
+        }
+
+        .arrow_down
+        {
+            padding-top: 70px;
+            .fa-angle-down 
+            {
+                color: #fff;
+                font-size: 25px;
+            }
+        }
+    }
+}
+
+
+#about
+{
+    padding-top: 65px;
+
+    .about_content 
+    {
+        text-align: center;
+        border:  1px solid #cccccc;
+        padding: 15px;
+
+        h1  
+        {
+            font-size: 45px;
+            letter-spacing: 1px;
+        }
+        h1::after
+        {
+            content: "";
+            display: block;
+            background-color: #cccccc;
+            width: 50px;
+            height: 5px;
+            border-radius: 5px;
+            margin: auto;
+        }
+        p 
+        {
+            padding-top: 10px;
+            font-size: 23px;
+        }
+    }
+}
+
+
+#maps
+{
+    padding-top: 80px;
+
+    .maps_content
+    {
+        text-align: center;
+
+        h1  
+        {
+            font-size: 45px;
+            letter-spacing: 1px;
+        }
+        h1::after
+        {
+            content: "";
+            display: block;
+            background-color: #cccccc;
+            width: 50px;
+            height: 5px;
+            border-radius: 5px;
+            margin: auto;
+        }
+
+        .maps_item
+        {
+        padding-top: 10px;
+
+            img 
+            {  
+                width: 100%;
+                max-width: 500px;
+            }
+            h2 
+            {
+                color: #0d0d0d;
+                font-size: 30px;
+                letter-spacing: 1px;
+                border: 1px solid #cccccc;
+                padding: 5px 10px;
+                width: 200px;
+                margin: 10px auto;
+            }
+        }
+    }
+}
+
+
+#game_mechanics
+{
+    margin-top: 80px;
+    padding-top: 80px;
+    background-color: #000000;
+    
+    .game_mechanics_content
+    {
+        text-align: center;
+        h1  
+        {
+            font-size: 45px;
+            letter-spacing: 1px;
+            color: #fff;
+        }
+        h1::after
+        {
+            content: "";
+            display: block;
+            background-color: #cccccc;
+            width: 50px;
+            height: 5px;
+            border-radius: 5px;
+            margin: auto;
+        }
+        p   
+        {
+            font-size: 23px;
+            color: #fff;
+        }
+
+        .team_item
+        {
+            padding-top: 10px;
+
+            img 
+            {
+                width: 100%;
+                border-left: 3px solid #cccccc;
+            }
+            h2 
+            {
+                color: #0d0d0d;
+                font-size: 30px;
+                letter-spacing: 1px;
+                border: 1px solid #cccccc;
+                padding: 5px 10px;
+                width: 200px;
+                margin: 20px auto;
+                color: #fff;
+            }
+            ol 
+            {
+                text-align: left;
+                padding: 10px 25px;
+                font-size: 20px;
+                li  
+                {
+                    color: #fff;
+                    letter-spacing: 1px;
+                }
+            }
+        }
+    }
+    .white_wave 
+    {
+        width: 100%;
+    }
+}
+
+#download
+{
+    padding-top: 80px;
+
+    .download_content
+    {
+        text-align: center;
+
+        h1  
+        {
+            font-size: 45px;
+            letter-spacing: 1px;
+        }
+        h1::after
+        {
+            content: "";
+            display: block;
+            background-color: #cccccc;
+            width: 50px;
+            height: 5px;
+            border-radius: 5px;
+            margin: auto;
+        }
+        p   
+        {
+            font-size: 23px;
+            letter-spacing: 1px;
+        }
+        
+        .download_item
+        {
+            margin: 10px;
+            padding: 10px 50px;
+            border: 2px solid #0d0d0d;
+            width: 100%;
+            max-width: 300px;
+            outline: none;
+            letter-spacing: 1px;
+        }
+        .download_item:hover
+        {
+            background-color: #0d0d0d;
+            color: #fff;
+        }
+        .download_item:hover .fa-download
+        {
+            color: #fff;
+        }
+    }
+}
+
+footer
+{
+    background-color: #000000;
+    margin-top: 80px;
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+    
+    h1 
+    {
+        font-size: 45px;
+        color: #fff;
+        letter-spacing: 1px;
+    }
+    .amongus_logo_footer
+    {
+        width: 100%;
+        max-width: 150px;
+    }
+    p 
+    {
+        color: #fff;
+        font-size: 18px;
+        letter-spacing: 1px;
+        padding-top: 40px;
+    }
+}
+
+.character_colors
+{
+    padding-bottom: 50px;
+
+.character_colors_content
+{
+    margin-top: 100px;
+    text-align: center;
+   
+    .characters
+    {
+        position: relative;
+
+        .character_colors_item
+        {
+            position: absolute;
+            width: 100%;
+            max-width: 200px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            margin-top: 130px;
+        }
+      
+    }
+    
+}
+
+.colors_set 
+{
+    padding-top: 270px;
+    text-align: center;
+
+    span#color_name 
+        {
+            font-size: 25px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+    h2
+    {
+        font-size: 30px;
+        letter-spacing: 1px;
+        padding-top: 50px;
+    }
+    .colors 
+    {
+        display: flex;
+        justify-content: center;
+        flex-flow: wrap row;
+
+        .color_item 
+        {
+            margin: 5px 5px;
+            box-shadow: 0 0 2px 0;
+        }
+        .red
+        {
+            width: 100%;
+            max-width: 20px;
+            height: 20px;
+            background-color: #ff0000;
+            cursor: pointer;
+        }
+        .cyan
+        {
+            width: 100%;
+            max-width: 20px;
+            height: 20px;
+            background-color: #33ffcc;
+            cursor: pointer;
+        }
+        .orange
+        {
+            width: 100%;
+            max-width: 20px;
+            height: 20px;
+            background-color: #ff6600;
+            cursor: pointer;
+        }
+        .yellow
+        {
+            width: 100%;
+            max-width: 20px;
+            height: 20px;
+            background-color: #ffff66;
+            cursor: pointer;
+        }
+        .lightgreen
+        {
+            width: 100%;
+            max-width: 20px;
+            height: 20px;
+            background-color: #66ff33;
+            cursor: pointer;
+        }
+        .green
+        {
+            width: 100%;
+            max-width: 20px;
+            height: 20px;
+            background-color: #009933;
+            cursor: pointer;
+        }
+        .blue
+        {
+            width: 100%;
+            max-width: 20px;
+            height: 20px;
+            background-color: #0033cc;
+            cursor: pointer;
+        }
+        .violet
+        {
+            width: 100%;
+            max-width: 20px;
+            height: 20px;
+            background-color: #6633cc;
+            cursor: pointer;
+        }
+        .pink
+        {
+            width: 100%;
+            max-width: 20px;
+            height: 20px;
+            background-color: #ff66cc;
+            cursor: pointer;
+        }
+        .brown
+        {
+            width: 100%;
+            max-width: 20px;
+            height: 20px;
+            background-color: #663333;
+            cursor: pointer;
+        }
+        .white
+        {
+            width: 100%;
+            max-width: 20px;
+            height: 20px;
+            background-color: #fff;
+            cursor: pointer;
+        }
+        .black
+        {
+            width: 100%;
+            max-width: 20px;
+            height: 20px;
+            background-color: #000;
+            cursor: pointer;
+        }
+    }
+}
+}
